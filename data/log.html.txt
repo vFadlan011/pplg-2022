@@ -1,0 +1,13 @@
+tugas-tabel: Rabu, 10 Agustus
+latihan-list: Rabu, 10 Agustus
+tugas-rangkum: Selasa, 9 Agustus
+tugas-list: Rabu, 3 Agustus
+tugas-gambar: Rabu, 27 Juli
+tugas-biodata: Selasa, 26 Juli
+
+{
+	"filename":"tugas-xyz.html",
+	"description":"tugas blah blah blah",
+	"date":1661242919 (epoch time stamp),
+	
+}
