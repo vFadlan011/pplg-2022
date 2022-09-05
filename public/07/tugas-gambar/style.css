@@ -1,39 +1,38 @@
-
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
-    max-width: 1080px;
-    margin: 64px auto;
+.container {
+  max-width: 1080px;
+  margin: 64px auto;
 }
 
-.content img{
-    min-height: 480px;
-    width: 100%;
-    object-fit: cover;
+.content img {
+  min-height: 480px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.imgCaption{
-    font-style: italic;
-    font-size: 12px;
-    line-height: 16px;
-    margin: 8px 0;
+.imgCaption {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 8px 0;
 }
 
-.imgCredit{
-    font-style: italic;
-    font-size: 12px;
-    line-height: 16px;
-    margin: 8px 0;
-    color: rgb(99, 99, 99);
+.imgCredit {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 8px 0;
+  color: rgb(99, 99, 99);
 }
 
-.biodata{
-    margin-bottom: 32px;
+.biodata {
+  margin-bottom: 32px;
 }
 
-.subSection{
-    margin-top: 48px;
-    padding: 0 32px;
+.subSection {
+  margin-top: 48px;
+  padding: 0 32px;
 }
