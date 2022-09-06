@@ -6,6 +6,10 @@
 
 body {
   margin: auto;
+  background-image: url("./img/holo-transparent2.png");
+  background-position-x: left;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .header {
