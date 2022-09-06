@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,21 +8,33 @@
     <title>tailwind css</title>
   </head>
 
-  <body>
+  <body
+    class="transition-colors duration-300 bg-cover"
+    style="
+      background-image: url('./img/holo-transparent2.png');
+      background-position-x: left;
+      background-size: auto;
+      background-repeat: no-repeat;
+    "
+  >
     <div class="header font-modern">
       <h1
-        class="text-5xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-purple-400 to-cyan-600 mt-7"
+        class="text-5xl text-center font-extrabold mt-7 text-slate-900 dark:text-slate-100"
       >
         Hello, World!
       </h1>
     </div>
     <div class="content font-modern">
-      <div class="profiles flex flex-col items-center">
+      <div class="profiles">
         <div class="about">
-          <h2 class="text-5xl text-slate-800 font-bold p-4 mt-4 w-16">
+          <h2
+            class="text-5xl text-slate-800 dark:text-slate-200 font-bold p-4 mt-4 max-w-[24rem]"
+          >
             Consectur Adispicing
           </h2>
-          <p class="text-lg text-slate-700 font-medium p-4 w-96">
+          <p
+            class="text-lg text-slate-700 dark:text-slate-300 font-medium p-4 max-w-[24rem]"
+          >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
             cumque possimus obcaecati officiis? Magni autem ipsum iste.
             Aspernatur beatae magni repellendus! At, dolorem voluptatum.
@@ -30,210 +42,27 @@
         </div>
         <div class="image">
           <img
-            class="rounded-full w-80 h-80 p-4"
+            class="rounded-full max-w-[20rem] h-[20rem] p-4 bg-cover"
             src="./img/profile-placeholder.jpg"
             alt="random-img"
           />
         </div>
       </div>
 
-      <div class="archive">
-        <h3 class="text-2xl m-4 px-4 py-2">Arsip Tugas</h3>
-
-        <div class="card-container">
-          <!-- CARD -->
-          <div class="card">
-            <!-- Title -->
-            <div class="card-title">
-              <h3>Lorem Ipsum</h3>
-              <span class="tugas"><p>TUGAS</p></span>
-            </div>
-
-            <!-- Description -->
-            <div class="card-desc">
-              <!-- Date -->
-              <p class="date">2 September 2022</p>
-              <!-- Description -->
-              <p class="desc-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
-                iure quam reprehenderit unde vero esse dolorum!
-              </p>
-            </div>
-
-            <!-- Most Used Lang -->
-            <div class="lang-type">
-              <div class="circle bg-sky-500"></div>
-              <div class="type-name">HTML</div>
-            </div>
-
-            <!-- Preview -->
-            <div class="preview">
-              <!-- View Code -->
-              <div class="view-code">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-
-                <p class="preview-text">View Code</p>
-              </div>
-              <!-- View Web -->
-              <div class="view-web">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z"
-                  />
-                </svg>
-
-                <p class="preview-text">View Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <!-- Title -->
-            <div class="card-title">
-              <h3>Lorem Ipsum</h3>
-              <span class="tugas"><p>TUGAS</p></span>
-            </div>
-
-            <!-- Description -->
-            <div class="card-desc">
-              <!-- Date -->
-              <p class="date">2 September 2022</p>
-              <!-- Description -->
-              <p class="desc-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
-                iure quam reprehenderit unde vero esse dolorum!
-              </p>
-            </div>
-
-            <!-- Most Used Lang -->
-            <div class="lang-type">
-              <div class="circle bg-sky-500"></div>
-              <div class="type-name">HTML</div>
-            </div>
-
-            <!-- Preview -->
-            <div class="preview">
-              <!-- View Code -->
-              <div class="view-code">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-
-                <p class="preview-text">View Code</p>
-              </div>
-              <!-- View Web -->
-              <div class="view-web">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z"
-                  />
-                </svg>
-
-                <p class="preview-text">View Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <!-- Title -->
-            <div class="card-title">
-              <h3>Lorem Ipsum</h3>
-              <span class="tugas"><p>TUGAS</p></span>
-            </div>
-
-            <!-- Description -->
-            <div class="card-desc">
-              <!-- Date -->
-              <p class="date">2 September 2022</p>
-              <!-- Description -->
-              <p class="desc-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
-                iure quam reprehenderit unde vero esse dolorum!
-              </p>
-            </div>
-
-            <!-- Most Used Lang -->
-            <div class="lang-type">
-              <div class="circle bg-sky-500"></div>
-              <div class="type-name">HTML</div>
-            </div>
-
-            <!-- Preview -->
-            <div class="preview">
-              <!-- View Code -->
-              <div class="view-code">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-
-                <p class="preview-text">View Code</p>
-              </div>
-              <!-- View Web -->
-              <div class="view-web">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z"
-                  />
-                </svg>
-
-                <p class="preview-text">View Web</p>
-              </div>
-            </div>
-          </div>
+      <div class="flex flex-col items-center w-2xl my-24">
+        <div>
+          <h3 class="text-3xl m-2 px-4 py-2 dark:text-slate-200">
+            Arsip Tugas
+          </h3>
+          <div class="card-container"></div>
         </div>
       </div>
     </div>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <p class="text-center my-2 text-slate-500">
+      Made with
+      <span class="love">🎔</span> and TailwindCSS by Fadlan A
+    </p>
+    <script src="./data/data.js"></script>
+    <script src="./script2.js"></script>
   </body>
 </html>
