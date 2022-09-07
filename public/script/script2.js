@@ -59,8 +59,6 @@ const getLangColor = {
 
 let temp = ``;
 data.forEach((element) => {
-  console.log(element.index);
-
   let card = `<div class="card" id="${element.id}">`;
 
   let cardTitle = `

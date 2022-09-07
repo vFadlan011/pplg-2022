@@ -11,6 +11,10 @@
     @apply flex flex-col items-center;
     @apply md:flex-row md:items-center md:justify-center md:my-16;
   }
+
+  .icon {
+    @apply w-6 h-6 p-2 mx-1 text-slate-800 hover:bg-slate-800 hover:text-slate-200 circle transition-colors duration-300;
+  }
   /* CARD */
   .card-container {
     @apply grid gap-4 grid-cols-1 w-96 m-auto;
@@ -37,7 +41,7 @@
     @apply rounded-3xl border-2 px-3 max-h-8;
   }
   .card-title .label p {
-    @apply font-medium text-sm mt-1.5;
+    @apply font-medium text-sm;
   }
 
   .card-title .label-red {
