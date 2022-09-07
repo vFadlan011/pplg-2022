@@ -1,38 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./img/pplg.png" />
-    <link rel="stylesheet" href="./css/style-dark.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fadlan Abduh</title>
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <title>Holla!</title>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
-    <div class="header">
-      <h1>Dasar-Dasar PPLG</h1>
+  <body
+    class="transition-colors duration-300 bg-cover"
+    style="
+      background-image: url('./img/holo-transparent2.png');
+      background-position-x: left;
+      background-size: auto;
+      background-repeat: no-repeat;
+    "
+  >
+    <div class="header font-modern">
+      <h1
+        class="text-5xl text-center font-extrabold mt-7 text-slate-900 dark:text-slate-100"
+      >
+        Hello, World!
+      </h1>
     </div>
-
-    <div class="profiles">
-      <div class="caption">
-        <h2>Hi! Nama saya Fadlan Abduh</h2>
-        <p>
-          Saya dari kelas <span class="serif">X PPLG</span> nomor absen 11.
-          Pengembangan Perangkat Lunak dan Gim (PPLG) adalah program keahlian
-          saya. Saya tinggal di Dusun Babadan Beji, Kecamatan Taman, Kabupaten
-          Pemalang.
-        </p>
+    <div class="content font-modern">
+      <div class="profiles">
+        <div class="about">
+          <h2
+            class="text-5xl text-slate-800 dark:text-slate-200 font-bold p-4 mt-4 max-w-[24rem]"
+          >
+            Consectur Adispicing
+          </h2>
+          <p
+            class="text-lg text-slate-700 dark:text-slate-300 font-medium p-4 max-w-[24rem]"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+            cumque possimus obcaecati officiis? Magni autem ipsum iste.
+            Aspernatur beatae magni repellendus! At, dolorem voluptatum.
+          </p>
+          <div class="w-[8rem] ml-4 flex">
+            <a href="">
+              <ion-icon name="logo-github" size="large" class="icon"></ion-icon>
+            </a>
+            <a href="">
+              <ion-icon
+                name="logo-instagram"
+                size="large"
+                class="icon"
+              ></ion-icon>
+            </a>
+            <a href="">
+              <ion-icon
+                name="logo-facebook"
+                size="large"
+                class="icon"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="image">
+          <img
+            class="rounded-full max-w-[20rem] h-[20rem] p-4 bg-cover"
+            src="./img/profile-placeholder.jpg"
+            alt="random-img"
+          />
+        </div>
       </div>
-      <div class="gambar">
-        <img src="./img/profile.jpg" alt="" />
+
+      <div class="flex flex-col items-center w-2xl my-24">
+        <div>
+          <h3 class="text-3xl m-2 px-4 py-2 dark:text-slate-200">
+            Arsip Tugas
+          </h3>
+          <div class="card-container"></div>
+        </div>
       </div>
     </div>
-
-    <div class="content">
-      <h3>Arsip Tugas:</h3>
-      <ul></ul>
-    </div>
-    <script src="./data/tugas.js" id="tugas"></script>
-    <script src="./script/script.js"></script>
+    <p class="text-center my-2 text-slate-500">
+      Made with
+      <span class="love">🎔</span> and TailwindCSS by Fadlan A
+    </p>
+    <script src="./data/data.js"></script>
+    <script src="./script/script2.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
