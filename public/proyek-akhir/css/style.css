@@ -1,0 +1,13 @@
+body {
+  max-width: 540px;
+  font-family: sans-serif;
+  margin: 64px auto;
+  background: url("../../img/holo-transparent2.png");
+  background-repeat: no-repeat;
+  background-color: rgb(15 23 42);
+  color: #cecece;
+}
+
+p {
+  color: #cecece;
+}
