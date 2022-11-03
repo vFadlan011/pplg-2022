@@ -1,71 +1,76 @@
 :root {
-  --bg-dark-p: #0f172a;
-  --bg-dark-s: rgb(18, 42, 99);
-  --bg-dark-t: #384c80;
-  --light: #cecece;
+    --bg-dark-p: #0f172a;
+    --bg-dark-s: rgb(18, 42, 99);
+    --bg-dark-t: #384c80;
+    --light: #cecece;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: url("../../img/smoke.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("../../img/smoke.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  background-color: var(--bg-dark-p);
-  color: var(--light);
+    background-color: var(--bg-dark-p);
+    color: var(--light);
 }
 
 h1 {
-  margin-top: 8px;
+    margin-top: 8px;
 }
 
 a {
-  text-decoration: none;
-  color: #d6d6d6;
+    text-decoration: none;
+    color: #d6d6d6;
 }
 
 .wrapper {
-  max-width: 640px;
-  margin: auto;
+    max-width: 640px;
+    margin: auto;
 }
 
 .navbar {
-  background-color: rgba(18, 42, 99, 0.7);
+    background-color: rgba(18, 42, 99, 0.7);
 }
 
 .navbar ul {
-  margin: 0;
-  list-style: none;
-  display: flex;
-  justify-content: end;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: end;
 }
 
 .navbar ul li {
-  padding: 6px 8px;
-  transition: 500ms;
-  cursor: pointer;
+    padding: 6px 8px;
+    transition: 500ms;
+    cursor: pointer;
 }
 .navbar ul li:hover {
-  background-color: var(--bg-dark-t);
+    background-color: var(--bg-dark-t);
 }
 .navbar ul li:active {
-  background-color: var(--bg-dark-p);
+    background-color: var(--bg-dark-p);
 }
 
 .main {
-  padding: 8px;
+    padding: 8px;
 }
 .main .wrapper {
-  padding: 16px;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 10, 0.4);
+    padding: 16px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 10, 0.4);
 }
 .footer {
-  margin-top: 480px;
-  height: 50px;
-  padding: 8px;
-  text-align: center;
-  background-color: var(--bg-dark-p);
+    margin-top: 480px;
+    height: 50px;
+    padding: 8px;
+    text-align: center;
+    background-color: var(--bg-dark-p);
+}
+
+.navbar .active {
+    color: #fff;
+    font-weight: bold;
 }
